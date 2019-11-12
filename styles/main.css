@@ -2,7 +2,8 @@
 @import url(../fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css);
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Montserrat Regular", sans-serif; }
 
 a {
   color: inherit;
@@ -279,5 +280,37 @@ header {
     background: rgba(255, 255, 255, 0.03); } }
 .locked {
   overflow: hidden; }
+
+.banner {
+  background: url("../../img/banner.png") no-repeat rgba(0, 0, 0, 0.4) 50% 50%;
+  background-size: cover;
+  padding: 305px 0; }
+  .banner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .banner div h1 {
+      color: white;
+      font-family: "Montserrat Bold", sans-serif;
+      font-size: 52px;
+      margin-bottom: 10px; }
+      .banner div h1 span {
+        color: #2ebaee;
+        font-family: "Montserrat Bold", sans-serif; }
+    .banner div p {
+      color: white;
+      margin-bottom: 55px; }
+    .banner div a {
+      padding: 10px 50px;
+      background-color: #2ebaee;
+      color: #ffffff;
+      border: 1px solid #2ebaee;
+      border-radius: 30px;
+      font-family: "Montserrat Bold", sans-serif;
+      font-size: 14px;
+      transition: 0.3s; }
+      .banner div a:hover {
+        background-color: #ffffff;
+        color: #2ebaee; }
 
 /*# sourceMappingURL=main.css.map */

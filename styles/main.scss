@@ -16,6 +16,7 @@ $brand-2: #39b9ef;
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat Regular", sans-serif;
 }
 
 a{
@@ -28,3 +29,4 @@ a{
 @import "../fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css";
 
 @import "components/header";
+@import "components/banner";

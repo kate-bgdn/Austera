@@ -1,0 +1,38 @@
+.banner{
+    background: url("../../img/banner.png") no-repeat rgba(0, 0, 0, 0.4) 50% 50%;
+    background-size: cover;
+    padding: 305px 0;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            color: white;
+            font-family: "Montserrat Bold", sans-serif;
+            font-size: 52px;
+            margin-bottom: 10px;
+            span{
+                color: $brand;
+                font-family: "Montserrat Bold", sans-serif;
+            }
+        }
+        p{
+            color: white;
+            margin-bottom: 55px;
+        }
+        a{
+            padding: 10px 50px;
+            background-color: $brand;
+            color: #ffffff;
+            border: 1px solid $brand;
+            border-radius: 30px;
+            font-family: "Montserrat Bold", sans-serif;
+            font-size: 14px;
+            transition: 0.3s;
+            &:hover{
+                background-color: #ffffff;
+                color: $brand;
+            }
+        }
+    }
+}
