@@ -1,2 +1,30 @@
+$brand: #2ebaee;
+$brand-2: #39b9ef;
+
+
+%border-left{
+    border-left: #000000 solid 2px;
+    padding-left: 25px;
+}
+
+@mixin max-screen($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
 @import "../fonts/stylesheet.css";
 @import "../fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css";
+
+@import "components/header";

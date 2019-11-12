@@ -7,12 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Austera</title>
     <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
+<header>
+    <div class="container-fluid">
+        <a href="#" class="logo">
+            <img src="img/logo.svg" alt="">
+        </a>
+
+        <div class="menu">
+            <div class="overlay">
+                <nav class="nav">
+                    <ul class="nav-menu" role="menu">
+                        <li>
+                            <a href="#" role="menuitem">Homepage</a>
+                        </li>
+                        <li class="active-link">
+                            <a href="#" role="menuitem">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" role="menuitem">About us</a>
+                        </li>
+                        <li>
+                            <a href="#" role="menuitem">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navBurger" role="navigation" id="navToggle"></div>
+
+            <div class="form">
+                <a href="#" class="search-opener" id="search-opener">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-reply"></i>
+                </a>
+                <div class="form-drop">
+                    <form action="#" class="form-search">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
 
 
+    </div>
+</header>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <script src="js/main.js"></script>
 </body>
