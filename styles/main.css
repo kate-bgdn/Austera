@@ -1,6 +1,6 @@
 @import url(../fonts/stylesheet.css);
 @import url(../fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css);
-.services a, .about div a, .team .flex .pic a {
+.services a, .about div a, .team .flex .pic a, .contact .flex form button {
   padding: 10px 30px;
   background-color: #2ebaee;
   color: #ffffff;
@@ -9,7 +9,7 @@
   font-family: "Montserrat Bold", sans-serif;
   font-size: 12px;
   transition: 0.3s; }
-  .services a:hover, .about div a:hover, .team .flex .pic a:hover {
+  .services a:hover, .about div a:hover, .team .flex .pic a:hover, .contact .flex form button:hover {
     background-color: #ffffff;
     color: #2ebaee; }
 
@@ -509,7 +509,7 @@ header {
   box-sizing: border-box; }
   .team h2 {
     font-family: "Montserrat Bold", sans-serif;
-    font-size: 40px;
+    font-size: 44px;
     color: #242424;
     margin-bottom: 50px; }
     .team h2 span {
@@ -527,8 +527,56 @@ header {
       .team .flex .pic h3 {
         font-size: 20px;
         margin-top: 15px;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        color: #242424; }
       .team .flex .pic p {
         margin-bottom: 30px; }
+
+.contact {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .contact .flex {
+    padding: 90px 0;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between; }
+    .contact .flex div h2 {
+      font-size: 52px;
+      font-family: "Montserrat Bold", sans-serif;
+      margin-bottom: 38px; }
+    .contact .flex div h3 {
+      color: #878787;
+      line-height: 35px; }
+      .contact .flex div h3 span {
+        color: #2ebaee; }
+    .contact .flex div p {
+      font-size: 12px;
+      margin-bottom: 15px; }
+    .contact .flex form {
+      text-align: center;
+      width: 48%;
+      padding: 7px 0; }
+      .contact .flex form input {
+        background: initial;
+        border: 1px solid #878787;
+        padding: 15px 20px;
+        width: 100%;
+        border-radius: 3px;
+        color: white;
+        margin-bottom: 15px;
+        box-sizing: border-box; }
+      .contact .flex form textarea {
+        width: 100%;
+        padding: 15px 20px;
+        border: 1px solid #878787;
+        border-radius: 3px;
+        resize: none;
+        background: initial;
+        color: white;
+        box-sizing: border-box;
+        margin-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map */
