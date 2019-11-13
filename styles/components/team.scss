@@ -1,0 +1,39 @@
+.team{
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0 70px;
+    box-sizing: border-box;
+    h2{
+        font-family: "Montserrat Bold", sans-serif;
+        font-size: 40px;
+        color: $black;
+        margin-bottom: 50px;
+        span{
+            font-family: "Montserrat Bold", sans-serif;
+            color: $brand;
+            display: block;
+        }
+    }
+    .flex{
+        display: flex;
+        .pic{
+            text-align: center;
+            padding: 0 23px;
+            img{
+                width: 70%;
+                border-radius: 250px;
+            }
+            h3{
+                font-size: 20px;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+            a{
+                @extend %blue-link;
+            }
+        }
+    }
+}

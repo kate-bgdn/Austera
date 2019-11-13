@@ -1,15 +1,15 @@
 @import url(../fonts/stylesheet.css);
 @import url(../fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css);
-.services a, .about div a {
+.services a, .about div a, .team .flex .pic a {
   padding: 10px 30px;
   background-color: #2ebaee;
   color: #ffffff;
   border: 1px solid #2ebaee;
   border-radius: 30px;
   font-family: "Montserrat Bold", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   transition: 0.3s; }
-  .services a:hover, .about div a:hover {
+  .services a:hover, .about div a:hover, .team .flex .pic a:hover {
     background-color: #ffffff;
     color: #2ebaee; }
 
@@ -501,5 +501,34 @@ header {
       @media screen and (max-width: 1150px) {
         .about div a {
           margin: 15px 30px; } }
+
+.team {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 0 70px;
+  box-sizing: border-box; }
+  .team h2 {
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 40px;
+    color: #242424;
+    margin-bottom: 50px; }
+    .team h2 span {
+      font-family: "Montserrat Bold", sans-serif;
+      color: #2ebaee;
+      display: block; }
+  .team .flex {
+    display: flex; }
+    .team .flex .pic {
+      text-align: center;
+      padding: 0 23px; }
+      .team .flex .pic img {
+        width: 70%;
+        border-radius: 250px; }
+      .team .flex .pic h3 {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 5px; }
+      .team .flex .pic p {
+        margin-bottom: 30px; }
 
 /*# sourceMappingURL=main.css.map */

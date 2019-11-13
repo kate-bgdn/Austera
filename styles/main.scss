@@ -9,7 +9,7 @@ $black: #242424;
     border: 1px solid $brand;
     border-radius: 30px;
     font-family: "Montserrat Bold", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     transition: 0.3s;
     &:hover{
         background-color: #ffffff;
@@ -48,3 +48,4 @@ p{
 @import "components/banner";
 @import "components/servises";
 @import "components/about";
+@import "components/team";
