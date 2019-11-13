@@ -1,0 +1,139 @@
+.services{
+    padding: 80px 0;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+48,000000+48,ffffff+48,ffffff+48,000000+48,000000+48,000000+48,000000+48,000000+48 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(-57deg,  rgba(255,255,255,1) 48%, rgba(46, 186, 238, 1)48%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-57deg,  rgba(255,255,255,1) 48%,rgba(46, 186, 238, 1) 48%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(147deg,  rgba(255,255,255,1) 48%,rgba(46, 186, 238, 1) 48%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#2ebaee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    h2{
+        text-align: center;
+        font-family: "Montserrat Bold", sans-serif;
+        font-size: 34px;
+        padding-bottom: 50px;
+        color: $black;
+    }
+    .serv-var{
+        text-align: left;
+        max-width: 1000px;
+        margin: 0 auto 60px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #e7e7e7;
+        padding-top: 60px;
+        @include max-screen(786px){
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            padding: 60px 15px 15px 0;
+        }
+        div{
+            max-width: 24%;
+            padding: 5px;
+            box-sizing: border-box;
+            @include max-screen(786px){
+                text-align: center;
+                max-width: 80%;
+            }
+            img{
+                height: 50px;
+                margin-bottom: 25px;
+            }
+            h3{
+                font-size: 16px;
+                margin-bottom: 25px;
+                color: $black;
+            }
+        }
+    }
+    a{
+        @extend %blue-link;
+    }
+    .serv-present{
+        margin: 150px auto 0;
+        display: flex;
+        justify-content: space-around;
+        max-width: 1000px;
+        @include max-screen(786px){
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+        }
+        div{
+            max-width: 58%;
+            text-align: left;
+            img{
+                max-width: 100%;
+            }
+            .reader{
+                max-width: 80%;
+                margin-bottom: 30px;
+            }
+            @include max-screen(786px){
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+        .txt{
+            max-width: 36%;
+            @include max-screen(786px){
+                max-width: 80%;
+            }
+            h2{
+                text-align: left;
+                font-size: 30px;
+                @include max-screen(786px){
+                    color: white;
+                }
+            }
+            p{
+                margin-bottom: 50px;
+                @include max-screen(786px){
+                    color: white;
+                }
+            }
+            a{
+                @include max-screen(786px){
+                    padding: 10px 30px;
+                    background-color: #ffffff;
+                    color: $brand;
+                    border: 1px solid #ffffff;
+                    border-radius: 30px;
+                    font-family: "Montserrat Bold", sans-serif;
+                    font-size: 14px;
+                    transition: 0.3s;
+                    &:hover{
+                        background-color: $brand;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .white-link{
+                padding: 10px 30px;
+                background-color: #ffffff;
+                color: $brand;
+                border: 1px solid #ffffff;
+                border-radius: 30px;
+                font-family: "Montserrat Bold", sans-serif;
+                font-size: 14px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: $brand;
+                    color: #ffffff;
+                }
+            }
+            .white-txt{
+                color: white;
+            }
+        }
+    }
+    .reverse{
+        display: flex;
+        justify-content: space-around;
+        @include max-screen(786px){
+            flex-direction: column-reverse;
+        }
+    }
+}

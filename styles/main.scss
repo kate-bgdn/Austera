@@ -1,11 +1,22 @@
 $brand: #2ebaee;
 $brand-2: #39b9ef;
+$black: #242424;
 
-
-%border-left{
-    border-left: #000000 solid 2px;
-    padding-left: 25px;
+%blue-link{
+    padding: 10px 30px;
+    background-color: $brand;
+    color: #ffffff;
+    border: 1px solid $brand;
+    border-radius: 30px;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+    &:hover{
+        background-color: #ffffff;
+        color: $brand;
+    }
 }
+
 
 @mixin max-screen($res) {
     @media screen and (max-width: $res) {
@@ -17,6 +28,7 @@ $brand-2: #39b9ef;
     margin: 0;
     padding: 0;
     font-family: "Montserrat Regular", sans-serif;
+    letter-spacing: 1px;
 }
 
 a{
@@ -24,9 +36,15 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-size: 12px;
+    color: #878787;
+}
 
 @import "../fonts/stylesheet.css";
 @import "../fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css";
 
 @import "components/header";
 @import "components/banner";
+@import "components/servises";
+
