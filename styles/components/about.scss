@@ -34,7 +34,7 @@
             }
         }
         a{
-            margin: 40px;
+            margin: 40px 40px 0 40px;
             @extend %blue-link;
             @include max-screen(1150px){
                 margin: 15px 30px;

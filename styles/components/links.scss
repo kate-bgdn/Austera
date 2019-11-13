@@ -1,3 +1,50 @@
 .links{
     font-family: "Montserrat Bold", sans-serif;
+    padding: 50px 0 70px;
+    box-sizing: border-box;
+    position: relative;
+    top: -55px;
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .pic{
+            padding: 100px 70px;
+            text-align: center;
+            padding: 100px 70px;
+            box-sizing: border-box;
+            width: 25%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            @include  max-screen(1080px){
+                width: 50%;
+                padding: 60px 40px;
+            }
+            @include  max-screen(500px){
+                font-size: 20px;
+                padding: 60px 20px;
+            }
+            a{
+                h3{
+                    font-family: "Montserrat Bold", sans-serif;
+                    font-size: 26px;
+                    text-align: left;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    color: white;
+                    transition: 0.3s;
+                    @include  max-screen(500px){
+                        font-size: 20px;
+                    }
+                }
+                &:hover{
+                    h3{
+                        color: $brand;
+                    }
+                }
+            }
+        }
+    }
 }

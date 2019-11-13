@@ -497,21 +497,62 @@ header {
           padding: 0 30px 15px;
           margin-bottom: 15px; } }
     .about div a {
-      margin: 40px; }
+      margin: 40px 40px 0 40px; }
       @media screen and (max-width: 1150px) {
         .about div a {
           margin: 15px 30px; } }
 
+.links {
+  font-family: "Montserrat Bold", sans-serif;
+  padding: 50px 0 70px;
+  box-sizing: border-box;
+  position: relative;
+  top: -55px; }
+  .links .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .links .flex .pic {
+      padding: 100px 70px;
+      text-align: center;
+      padding: 100px 70px;
+      box-sizing: border-box;
+      width: 25%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+      @media screen and (max-width: 1080px) {
+        .links .flex .pic {
+          width: 50%;
+          padding: 60px 40px; } }
+      @media screen and (max-width: 500px) {
+        .links .flex .pic {
+          font-size: 20px;
+          padding: 60px 20px; } }
+      .links .flex .pic a h3 {
+        font-family: "Montserrat Bold", sans-serif;
+        font-size: 26px;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: white;
+        transition: 0.3s; }
+        @media screen and (max-width: 500px) {
+          .links .flex .pic a h3 {
+            font-size: 20px; } }
+      .links .flex .pic a:hover h3 {
+        color: #2ebaee; }
+
 .team {
   max-width: 1000px;
   margin: auto;
-  padding: 50px 0 70px;
+  padding: 0 0 50px;
   box-sizing: border-box; }
   .team h2 {
     font-family: "Montserrat Bold", sans-serif;
-    font-size: 44px;
+    font-size: 40px;
     color: #242424;
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
     .team h2 span {
       font-family: "Montserrat Bold", sans-serif;
       color: #2ebaee;
@@ -519,10 +560,19 @@ header {
   .team .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    padding-bottom: 30px; }
     .team .flex .pic {
       text-align: center;
-      padding: 23px; }
+      padding: 20px 23px;
+      box-sizing: border-box;
+      max-width: 25%; }
+      @media screen and (max-width: 900px) {
+        .team .flex .pic {
+          max-width: 40%; } }
+      @media screen and (max-width: 900px) {
+        .team .flex .pic {
+          max-width: 80%; } }
       .team .flex .pic img {
         width: 70%;
         border-radius: 250px; }
