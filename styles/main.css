@@ -618,6 +618,28 @@ header {
       .contact .flex div p {
         font-size: 12px;
         margin-bottom: 15px; }
+      .contact .flex div ul {
+        list-style: none; }
+        .contact .flex div ul li {
+          display: inline-block; }
+          .contact .flex div ul li a {
+            display: inline-block;
+            width: 30px;
+            height: 25px;
+            background-color: #e23047;
+            text-align: center;
+            padding-top: 5px;
+            margin-top: 30px;
+            margin-right: 25px;
+            border-radius: 20px; }
+          .contact .flex div ul li a.twitter {
+            background-color: #55acee; }
+          .contact .flex div ul li a.facebook {
+            background-color: #3b5998; }
+          .contact .flex div ul li a.pinterest {
+            background-color: #cc2127; }
+          .contact .flex div ul li a.gmail {
+            background-color: #dd4b39; }
     .contact .flex form {
       text-align: center;
       width: 48%;
