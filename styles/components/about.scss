@@ -1,0 +1,44 @@
+.about{
+    display: flex;
+    @include max-screen(768px){
+        flex-direction: column;
+        align-items: center;
+    }
+    div{
+        max-width: 50%;
+        @include max-screen(768px){
+            max-width: 100%;
+            padding-bottom: 30px;
+        }
+        img{
+            max-width: 100%;
+        }
+        h4{
+            padding: 80px 30px 30px 40px;
+            color: $black;
+            font-size: 30px;
+            max-width: 300px;
+            @include max-screen(1150px){
+                padding: 0 15px 15px 30px;
+                font-size: 26px;
+            }
+
+        }
+        p{
+            margin-bottom: 30px;
+            padding: 30px 30px 30px 40px;
+            max-width: 400px;
+            @include max-screen(1150px){
+                padding: 0 30px 15px;
+                margin-bottom: 15px;
+            }
+        }
+        a{
+            margin: 40px;
+            @extend %blue-link;
+            @include max-screen(1150px){
+                margin: 15px 30px;
+            }
+        }
+    }
+}
