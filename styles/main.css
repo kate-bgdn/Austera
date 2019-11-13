@@ -517,10 +517,12 @@ header {
       color: #2ebaee;
       display: block; }
   .team .flex {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
     .team .flex .pic {
       text-align: center;
-      padding: 0 23px; }
+      padding: 23px; }
       .team .flex .pic img {
         width: 70%;
         border-radius: 250px; }
@@ -537,28 +539,43 @@ header {
   background-position: center;
   background-size: cover; }
   .contact .flex {
-    padding: 90px 0;
+    padding: 90px 15px;
     max-width: 1000px;
     margin: auto;
     color: white;
     display: flex;
-    justify-content: space-between; }
-    .contact .flex div h2 {
-      font-size: 52px;
-      font-family: "Montserrat Bold", sans-serif;
-      margin-bottom: 38px; }
-    .contact .flex div h3 {
-      color: #878787;
-      line-height: 35px; }
-      .contact .flex div h3 span {
-        color: #2ebaee; }
-    .contact .flex div p {
-      font-size: 12px;
-      margin-bottom: 15px; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 909px) {
+      .contact .flex {
+        justify-content: center; } }
+    .contact .flex div {
+      padding: 0 5px;
+      box-sizing: border-box; }
+      @media screen and (max-width: 909px) {
+        .contact .flex div {
+          margin-bottom: 30px;
+          text-align: center; } }
+      .contact .flex div h2 {
+        font-size: 52px;
+        font-family: "Montserrat Bold", sans-serif;
+        margin-bottom: 38px; }
+      .contact .flex div h3 {
+        color: #878787;
+        line-height: 35px; }
+        .contact .flex div h3 span {
+          color: #2ebaee; }
+      .contact .flex div p {
+        font-size: 12px;
+        margin-bottom: 15px; }
     .contact .flex form {
       text-align: center;
       width: 48%;
-      padding: 7px 0; }
+      padding: 7px 5px;
+      box-sizing: border-box; }
+      @media screen and (max-width: 909px) {
+        .contact .flex form {
+          width: 80%; } }
       .contact .flex form input {
         background: initial;
         border: 1px solid #878787;
@@ -578,5 +595,44 @@ header {
         color: white;
         box-sizing: border-box;
         margin-bottom: 15px; }
+
+footer {
+  padding: 45px 0;
+  background: #000000; }
+  footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto; }
+    @media screen and (max-width: 900px) {
+      footer div {
+        flex-direction: column;
+        align-items: center; } }
+    footer div ul {
+      list-style: none;
+      text-align: center; }
+      @media screen and (max-width: 900px) {
+        footer div ul {
+          margin-bottom: 30px; } }
+      footer div ul li {
+        display: inline-block;
+        color: white;
+        font-size: 12px;
+        margin: 0 5px; }
+        @media screen and (max-width: 450px) {
+          footer div ul li {
+            margin: 10px; } }
+        footer div ul li a {
+          border: 1px solid transparent;
+          padding: 10px;
+          transition: 0.3s; }
+          footer div ul li a:hover {
+            border: 1px solid white;
+            border-radius: 4px; }
+    footer div p {
+      text-align: center;
+      padding: 0 10px;
+      box-sizing: border-box; }
 
 /*# sourceMappingURL=main.css.map */

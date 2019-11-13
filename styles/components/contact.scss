@@ -3,13 +3,23 @@
     background-position: center;
     background-size: cover;
     .flex{
-        padding: 90px 0;
+        padding: 90px 15px;
         max-width: 1000px;
         margin: auto;
         color: white;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @include max-screen(909px){
+            justify-content: center;
+        }
         div{
+            padding: 0 5px;
+            box-sizing: border-box;
+            @include max-screen(909px){
+                margin-bottom: 30px;
+                text-align: center;
+            }
             h2{
                 font-size: 52px;
                 font-family: "Montserrat Bold", sans-serif;
@@ -30,7 +40,11 @@
         form{
             text-align: center;
             width: 48%;
-            padding: 7px 0;
+            padding: 7px 5px;
+            box-sizing: border-box;
+            @include max-screen(909px){
+                width: 80%;
+            }
             input{
                 background: initial;
                 border: 1px solid #878787;
